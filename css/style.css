@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1;
+  font-weight: 500;
+  color: var(--Light-gray);
+}
+.section-testimonials {
+  min-height: 100vh;
+  padding: 9.6rem 0;
+  background-color: var(--Light-grayish-blue);
+}
+.heading-primary {
+  font-size: 5.4rem;
+  color: var(--Very-dark-grayish-blue);
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.2rem;
+}
+
+.testimonial {
+  border-radius: 1.25rem;
+  padding: 3.2rem;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+.photo {
+  width: 4rem;
+  border: 1px solid var(--Light-gray);
+  border-radius: 50%;
+}
+.name {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.verified {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--Light-gray);
+  opacity: 0.5;
+}
+.focus {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  line-height: 1.2;
+  margin-bottom: 2.4rem;
+}
+.focus-off {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+/*
+==================== 
+  Particularities
+====================
+*/
+.testimonial:nth-child(1) {
+  background-color: var(--Moderate-violet);
+  grid-column: span 2;
+  position: relative;
+}
+.testimonial * {
+  position: relative;
+}
+.imgBx {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(-100%);
+}
+.imgBx img {
+  display: inline-block;
+  width: 14rem;
+}
+
+.testimonial:nth-child(2) {
+  background-color: var(--Very-dark-grayish-blue);
+}
+.testimonial:nth-child(3) {
+  color: var(--Very-dark-grayish-blue);
+  background-color: var(--White);
+  grid-row: span 2;
+}
+.testimonial:nth-child(3) span {
+  color: inherit;
+}
+
+.testimonial:nth-child(4) {
+  color: var(--Very-dark-grayish-blue);
+  background-color: var(--White);
+}
+.testimonial:nth-child(4) span {
+  color: inherit;
+}
+
+.testimonial:nth-child(5) {
+  background-color: var(--Very-dark-blackish-blue);
+  grid-column: span 2;
+}
