@@ -34,7 +34,7 @@ body {
   margin-bottom: 6.4rem;
 }
 .container {
-  max-width: 130rem;
+  max-width: 140rem;
   margin: 0 auto;
 }
 .grid {
@@ -45,7 +45,7 @@ body {
 
 .testimonial {
   border-radius: 1.25rem;
-  padding: 3.2rem;
+  padding: 3.2rem 4.4rem;
 }
 
 .header-box {
